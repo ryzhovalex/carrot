@@ -12,10 +12,10 @@ export default function handler(
 
     switch (req.method) {
       case "GET":
-        res.status(200).json(taskService.getTask(taskId));
+        res.status(200).json(taskService.find(taskId));
         break;
       case "POST":
-        res.status(200).json(taskService.completeTask(taskId))
+        res.status(200).json(taskService.complete(taskId))
         break;
       default:
         res.status(405).json({

@@ -8,7 +8,7 @@ export default class TaskService extends Service {
    * @param id id of the task
    * @return fetched task
    */
-  getTask(id: string): Task {
+  find(id: string): Task {
     return {
       id: "1",
       title: "Make a coffee",
@@ -22,7 +22,7 @@ export default class TaskService extends Service {
    * 
    * @param id Id of the task
    */
-  completeTask(id: string): void {
+  complete(id: string): void {
   }
 
   /**
@@ -30,7 +30,7 @@ export default class TaskService extends Service {
    * 
    * @return Fetched tasks
    */
-  getTasks(): Task[] {
+  findAll(): Task[] {
     return [
       {
         id: "1",
