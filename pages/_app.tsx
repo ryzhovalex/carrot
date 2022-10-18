@@ -1,9 +1,9 @@
 import "../styles/globals.css"; 
 import type { AppProps } from 'next/app'
-import Header from "../components/header";
+import HeaderComponent from "../components/HeaderComponent";
 import Head from "next/head";
 
-function AppCore({ Component, pageProps }: AppProps) {
+function AppRoot({ Component, pageProps }: AppProps) {
   return (
     <>
     <div className='dark bg-c60 w-full h-full'>
@@ -13,7 +13,7 @@ function AppCore({ Component, pageProps }: AppProps) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Header/>
+      <HeaderComponent/>
 
       <Component {...pageProps} />
 
@@ -22,4 +22,4 @@ function AppCore({ Component, pageProps }: AppProps) {
   )
 }
 
-export default AppCore
+export default AppRoot

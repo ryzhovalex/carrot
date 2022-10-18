@@ -1,5 +1,5 @@
 import type { NextPage } from 'next'
-import Tasks from '../components/task/tasks'
+import Tasks from '../components/task/TasksComponent'
 
 const Home: NextPage = () => {
   return <Tasks/>

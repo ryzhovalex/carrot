@@ -17,7 +17,7 @@ import {
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
 import carrotLogo from "../public/logo.png"
 
-export default function Header() {
+export default function HeaderComponent() {
   return (
     <div className="
       flex flex-row justify-around bg-c30 p-3
