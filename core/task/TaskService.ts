@@ -18,11 +18,22 @@ export default class TaskService extends Service {
   }
 
   /**
+   * Adds a task.
+   * 
+   * @param title Title of the task to be added
+   * @return Task have been added
+   */
+  add(title: string): Task {
+    
+  }
+
+  /**
    * Completes task with given id
    * 
    * @param id Id of the task
+   * @return Task have been completed
    */
-  complete(id: string): void {
+  complete(id: string): Task {
   }
 
   /**
